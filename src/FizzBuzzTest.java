@@ -33,5 +33,27 @@ public class FizzBuzzTest {
 		Program fizzBuzz = new Program(); 
 		Assert.assertEquals("7", fizzBuzz.main(7)); 
 	}
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testFor27() {
+		Program fizzBuzz = new Program(); 
+		Assert.assertEquals("Fizz", fizzBuzz.main(27)); 
+	}
+	
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testFor60() {
+		Program fizzBuzz = new Program(); 
+		Assert.assertEquals("FizzBuzz", fizzBuzz.main(60)); 
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testFor25() {
+		Program fizzBuzz = new Program(); 
+		Assert.assertEquals("Buzz", fizzBuzz.main(25)); 
+	}
 
 }

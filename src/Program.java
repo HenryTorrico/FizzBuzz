@@ -1,21 +1,26 @@
 public class Program {
 	public String main(int numero)
 	{
-		if (numero % 3 == 0 && numero % 5 == 0)
+		String resp;
+		resp = "";
+		if (numero % 3 != 0 && numero % 5 != 0)
 		{
-			return "FizzBuzz";                    
+			resp=Integer.toString(numero);                     
 		}
 		else
+		{
 			if(numero % 3 == 0)
 			{
-				return "Fizz";
+				resp= resp + "Fizz";
+			} 
+			if(numero % 5 == 0)
+			{
+				resp = resp + "Buzz";
 			}
-			else 
-				if(numero % 5 == 0)
-				{
-					return "Buzz";
-				}
-				else
-					return Integer.toString(numero);
-    }	
+		}
+		return resp;
+	    
+	}		
 }
+
+
